@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Finger+Paint&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Finger+Paint&family=Fredoka+One&family=Poiret+One&display=swap');
+
+
+
+.main-page {
+    position: relative;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.main-title {
+    color: brown;
+    font-family: 'Finger Paint', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 6em;
+    margin: 5px;
+}
+
+.game-info {
+    font-family: 'Fredoka One', cursive;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* .bg-image {
+    opacity: 0.4;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+} */
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #FF6D00;
+    font-family: 'Fredoka One', cursive
+}
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #FF6D00;
+    font-family: Creepy, serif;
+  }
+  
+  .overlay-text-small {
+    font-size: .3em;
+  }
+  
+  .overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+  }
+
+@keyframes overlay-grow {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 0;
+    }
+    to {
+      background-color: rgba(0, 0, 0, .8);
+      font-size: 10em;
+    }
+  }
